@@ -43,7 +43,7 @@ public abstract class Animal implements IAnimal{
     @Override
     public String toString() {
         return "Animal: " + this.specie + " Space needed=" + space + ", diet=" + diet + ", cares=" + cares + ", frequency=" + frequency + ", type="
-                + type + ", behavior=" + behavior + ", isCompatible=" + isCompatible + ", habitat=" + habitat;
+                + type + ", behavior=" + behavior + ", isCompatible=" + isCompatible + ", habitat=" + habitat + "\n";
     }
 
     @Override

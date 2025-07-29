@@ -29,8 +29,9 @@ public abstract class HabitatClass {
 
     @Override
     public String toString() {
-        return "HabitatClass [animalsList=" + animalsList + "]";
+        return "HabitatClass [capacity=" + capacity + ", habitat=" + habitat + ", animalsList=" + animalsList + "]";
     }
+
 
 
 

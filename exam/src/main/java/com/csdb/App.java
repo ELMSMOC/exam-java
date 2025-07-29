@@ -23,22 +23,23 @@ public final class App {
      */
     public static void main(String[] args) {
 
-        Elephant l = new Elephant();
-        Toucan t = new Toucan();
-        Toucan t2 = new Toucan();
-        Toucan t3 = new Toucan();
-        Zebra z = new Zebra();
+
+
+
         Dolphin d1 = new Dolphin();
 
         Terrestrial t1 = new Terrestrial();
-
-        System.out.println(t1.addAnimal(t));
-        System.out.println(t1.addAnimal(t2));
-        System.out.println(t1.addAnimal(d1));
-        System.out.println(t1.addAnimal(z));
+        t1.addAnimal(new Elephant());
+        t1.addAnimal(new Zebra());
+        t1.addAnimal(new Zebra());
+        t1.addAnimal(new Elephant());
+        t1.addAnimal(new Toucan());
+        t1.addAnimal(new Toucan());
+        t1.addAnimal(new Toucan());
+        t1.addAnimal(new Toucan());
+        t1.addAnimal(new Toucan());
 
         System.out.println(t1.toString());
-        System.out.println(t.isCompatible(d1));
 
 
 
