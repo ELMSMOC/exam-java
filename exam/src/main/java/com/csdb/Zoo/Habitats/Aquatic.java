@@ -4,7 +4,7 @@ import com.csdb.Zoo.Enums.Habitat;
 
 public class Aquatic extends HabitatClass{
 
-    Aquatic() {
+    public Aquatic() {
         super(14, Habitat.AQUATIC);
     }
 

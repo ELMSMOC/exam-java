@@ -12,16 +12,12 @@ public abstract class HabitatClass {
 
     private List<Animal> animalsList = new ArrayList<Animal>();
 
-    HabitatClass(int capacity, Habitat habitat){
+    public HabitatClass(int capacity, Habitat habitat){
         this.capacity = capacity;
         this.habitat = habitat;
     }
 
-    public Habitat getHabitat() {
-        return habitat;
-    }
-
-    boolean addAnimal(Animal a){
+    public boolean addAnimal(Animal a){
         for (Animal animal : animalsList) {
             if (!animal.isCompatible(a)) {
                 return false;
@@ -29,6 +25,11 @@ public abstract class HabitatClass {
         }
         animalsList.add(a);
         return true;
+    }
+
+    @Override
+    public String toString() {
+        return "HabitatClass [animalsList=" + animalsList + "]";
     }
 
 

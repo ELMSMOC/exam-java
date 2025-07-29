@@ -4,7 +4,7 @@ import com.csdb.Zoo.Enums.Habitat;
 
 public class Terrestrial extends HabitatClass{
 
-    Terrestrial() {
+    public Terrestrial() {
         super(4, Habitat.TERRESTRIAL);
     }
 

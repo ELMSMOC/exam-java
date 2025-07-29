@@ -4,7 +4,7 @@ import com.csdb.Zoo.Enums.Habitat;
 
 public class Terrarium extends HabitatClass{
 
-    Terrarium() {
+    public Terrarium() {
         super(10, Habitat.TERRARIUM);
     }
 
