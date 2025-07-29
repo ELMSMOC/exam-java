@@ -9,16 +9,7 @@ public class Snake extends Animal {
 
 
     public Snake() {
-        super(25, Diet.OMNIVORE, "Medicinas", 6, Type.REPTILE, Behavior.PREDATOR, true, Habitat.TERRARIUM);
-    }
-
-    @Override
-    public boolean isCompatible(Animal a) {
-        if (a.getBehavior() == this.getBehavior() && a.getHabitat() == this.getHabitat()){
-            return true;
-        } else {
-            return false;
-        }
+        super(25, Diet.OMNIVORE, "Medicinas", 6, Type.REPTILE, Behavior.PREDATOR, true, Habitat.TERRARIUM, false);
     }
 
     @Override
@@ -29,6 +20,11 @@ public class Snake extends Animal {
     @Override
     public Habitat getHabitat() {
         return Habitat.TERRARIUM;
+    }
+
+    @Override
+    public boolean getIsSociable() {
+        return false;
     }
 
 }

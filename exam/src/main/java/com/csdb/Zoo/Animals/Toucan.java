@@ -9,16 +9,7 @@ public class Toucan extends Animal {
 
 
     public Toucan() {
-        super(25, Diet.HERBIVOROUS, "Medicinas", 6, Type.BIRD, Behavior.PREY, true, Habitat.TERRESTRIAL);
-    }
-
-    @Override
-    public boolean isCompatible(Animal a) {
-        if (a.getBehavior() == this.getBehavior() && a.getHabitat() == this.getHabitat()){
-            return true;
-        } else {
-            return false;
-        }
+        super(25, Diet.HERBIVOROUS, "Medicinas", 6, Type.BIRD, Behavior.PREY, true, Habitat.TERRESTRIAL, true);
     }
 
     @Override

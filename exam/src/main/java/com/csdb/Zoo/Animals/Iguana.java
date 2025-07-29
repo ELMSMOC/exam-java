@@ -9,16 +9,7 @@ public class Iguana extends Animal {
 
 
     public Iguana() {
-        super(25, Diet.HERBIVOROUS, "Medicinas", 6, Type.REPTILE, Behavior.PREY, true, Habitat.TERRARIUM);
-    }
-
-    @Override
-    public boolean isCompatible(Animal a) {
-        if (a.getBehavior() == this.getBehavior() && a.getHabitat() == this.getHabitat()){
-            return true;
-        } else {
-            return false;
-        }
+        super(25, Diet.HERBIVOROUS, "Medicinas", 6, Type.REPTILE, Behavior.PREY, true, Habitat.TERRARIUM, false);
     }
 
     @Override
@@ -29,6 +20,11 @@ public class Iguana extends Animal {
     @Override
     public Habitat getHabitat() {
         return Habitat.TERRARIUM;
+    }
+
+    @Override
+    public boolean getIsSociable() {
+        return false;
     }
 
 }

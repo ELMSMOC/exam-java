@@ -9,16 +9,7 @@ public class Dolphin extends Animal {
 
 
     public Dolphin() {
-        super(25, Diet.CARNIVOROUS, "Medicinas", 6, Type.SEA, Behavior.PREDATOR, true, Habitat.AQUATIC);
-    }
-
-    @Override
-    public boolean isCompatible(Animal a) {
-        if (a.getBehavior() == this.getBehavior() && a.getHabitat() == this.getHabitat()){
-            return true;
-        } else {
-            return false;
-        }
+        super(25, Diet.CARNIVOROUS, "Medicinas", 6, Type.SEA, Behavior.PREDATOR, true, Habitat.AQUATIC, true);
     }
 
     @Override

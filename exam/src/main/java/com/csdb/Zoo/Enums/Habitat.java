@@ -1,16 +1,15 @@
 package com.csdb.Zoo.Enums;
 
 public enum Habitat {
-    TERRESTRIAL("Terrestre", 4),
-    AQUATIC("Acuatico", 5),
-    TERRARIUM("Terrario", 6);
+    TERRESTRIAL("Terrestre"),
+    AQUATIC("Acuatico"),
+    TERRARIUM("Terrario");
+
 
     String trans;
-    int animalsFit;
 
-    Habitat(String trans, int animalsFit){
+    Habitat(String trans){
         this.trans = trans;
-        this.animalsFit = animalsFit;
     }
 
 }

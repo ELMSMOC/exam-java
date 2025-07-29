@@ -14,10 +14,10 @@ public abstract class Animal implements IAnimal{
     private Type type;
     private Behavior behavior;
     private boolean isCompatible;
+    private boolean isSociable;
     private Habitat habitat;
 
-    public Animal(int space, Diet diet, String cares, int frequency, Type type, Behavior behavior, boolean isCompatible,
-            Habitat habitat) {
+    public Animal(int space, Diet diet, String cares, int frequency, Type type, Behavior behavior, boolean isCompatible, Habitat habitat, boolean isSociable) {
         this.space = space;
         this.diet = diet;
         this.cares = cares;
@@ -26,12 +26,27 @@ public abstract class Animal implements IAnimal{
         this.behavior = behavior;
         this.isCompatible = isCompatible;
         this.habitat = habitat;
+        this.isSociable = isSociable;
+    }
+
+    @Override
+    public boolean isCompatible(Animal a) {
+        if (a.getBehavior() == this.getBehavior() && a.getHabitat() == this.getHabitat() && a.getIsSociable() == true && this.getIsSociable() == true){
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
     public String toString() {
-        return "Animal [space=" + space + ", diet=" + diet + ", cares=" + cares + ", frequency=" + frequency + ", type="
-                + type + ", behavior=" + behavior + ", isCompatible=" + isCompatible + ", habitat=" + habitat + "]";
+        return "Animal: Space needed=" + space + ", diet=" + diet + ", cares=" + cares + ", frequency=" + frequency + ", type="
+                + type + ", behavior=" + behavior + ", isCompatible=" + isCompatible + ", habitat=" + habitat;
+    }
+
+    @Override
+    public boolean getIsSociable() {
+        return true;
     }
 
 

@@ -9,16 +9,7 @@ public class Seal extends Animal {
 
 
     public Seal() {
-        super(25, Diet.CARNIVOROUS, "Medicinas", 6, Type.SEA, Behavior.PREY, true, Habitat.AQUATIC);
-    }
-
-    @Override
-    public boolean isCompatible(Animal a) {
-        if (a.getBehavior() == this.getBehavior() && a.getHabitat() == this.getHabitat()){
-            return true;
-        } else {
-            return false;
-        }
+        super(25, Diet.CARNIVOROUS, "Medicinas", 6, Type.SEA, Behavior.PREY, true, Habitat.AQUATIC, true);
     }
 
     @Override

@@ -6,6 +6,7 @@ import com.csdb.Zoo.Enums.Habitat;
 public interface IAnimal {
     Behavior getBehavior();
     Habitat getHabitat();
+    boolean getIsSociable();
     boolean isCompatible(Animal a);
 
 
