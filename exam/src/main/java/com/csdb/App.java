@@ -40,6 +40,8 @@ public final class App {
         t1.addAnimal(new Toucan());
 
         System.out.println(t1.toString());
+                System.out.println(t1.getCapacity());
+        // System.out.println(t1.animalsList.size);
 
 
 

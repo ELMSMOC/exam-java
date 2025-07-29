@@ -8,6 +8,7 @@ import com.csdb.Zoo.Enums.Habitat;
 
 public abstract class HabitatClass {
     private int capacity;
+
     private Habitat habitat;
 
     private List<Animal> animalsList = new ArrayList<Animal>();
@@ -17,9 +18,13 @@ public abstract class HabitatClass {
         this.habitat = habitat;
     }
 
+    public int getCapacity() {
+        return capacity;
+    }
+
     public boolean addAnimal(Animal a){
         for (Animal animal : animalsList) {
-            if (!animal.isCompatible(a) && animalsList.size() < this.capacity) {
+            if (!animal.isCompatible(a) && animalsList.size() < this.getCapacity()) {
                 return false;
             }
         }
