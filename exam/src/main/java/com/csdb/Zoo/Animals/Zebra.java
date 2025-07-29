@@ -9,7 +9,7 @@ public class Zebra extends Animal {
 
 
     public Zebra() {
-        super(20, Diet.HERBIVOROUS, "Medicinas", 3, Type.MAMMAL, Behavior.PREY, true, Habitat.TERRESTRIAL, true);
+        super("Zebra", 20, Diet.HERBIVOROUS, "Medicinas", 3, Type.MAMMAL, Behavior.PREY, true, Habitat.TERRESTRIAL, true);
     }
 
     @Override

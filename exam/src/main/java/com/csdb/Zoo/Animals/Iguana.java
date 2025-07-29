@@ -9,7 +9,7 @@ public class Iguana extends Animal {
 
 
     public Iguana() {
-        super(25, Diet.HERBIVOROUS, "Medicinas", 6, Type.REPTILE, Behavior.PREY, true, Habitat.TERRARIUM, false);
+        super("Iguana", 25, Diet.HERBIVOROUS, "Medicinas", 6, Type.REPTILE, Behavior.PREY, true, Habitat.TERRARIUM, false);
     }
 
     @Override

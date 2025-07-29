@@ -9,7 +9,7 @@ public class Lion extends Animal {
 
 
     public Lion() {
-        super(20, Diet.CARNIVOROUS, "Medicinas", 4, Type.MAMMAL, Behavior.PREDATOR, true, Habitat.TERRESTRIAL, true);
+        super("Leon", 20, Diet.CARNIVOROUS, "Medicinas", 4, Type.MAMMAL, Behavior.PREDATOR, true, Habitat.TERRESTRIAL, true);
     }
 
     @Override

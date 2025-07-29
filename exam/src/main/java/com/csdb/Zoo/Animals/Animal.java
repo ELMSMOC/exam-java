@@ -7,6 +7,7 @@ import com.csdb.Zoo.Enums.Type;
 
 public abstract class Animal implements IAnimal{
 
+    private String specie;
     private int space;
     private Diet diet;
     private String cares;
@@ -17,7 +18,8 @@ public abstract class Animal implements IAnimal{
     private boolean isSociable;
     private Habitat habitat;
 
-    public Animal(int space, Diet diet, String cares, int frequency, Type type, Behavior behavior, boolean isCompatible, Habitat habitat, boolean isSociable) {
+    public Animal(String specie, int space, Diet diet, String cares, int frequency, Type type, Behavior behavior, boolean isCompatible, Habitat habitat, boolean isSociable) {
+        this.specie = specie;
         this.space = space;
         this.diet = diet;
         this.cares = cares;
@@ -40,7 +42,7 @@ public abstract class Animal implements IAnimal{
 
     @Override
     public String toString() {
-        return "Animal: Space needed=" + space + ", diet=" + diet + ", cares=" + cares + ", frequency=" + frequency + ", type="
+        return "Animal: " + this.specie + " Space needed=" + space + ", diet=" + diet + ", cares=" + cares + ", frequency=" + frequency + ", type="
                 + type + ", behavior=" + behavior + ", isCompatible=" + isCompatible + ", habitat=" + habitat;
     }
 

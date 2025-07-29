@@ -9,7 +9,7 @@ public class Elephant extends Animal {
 
 
     public Elephant() {
-        super(25, Diet.HERBIVOROUS, "Medicinas", 6, Type.MAMMAL, Behavior.PREY, true, Habitat.TERRESTRIAL, true);
+        super("Elephant", 25, Diet.HERBIVOROUS, "Medicinas", 6, Type.MAMMAL, Behavior.PREY, true, Habitat.TERRESTRIAL, true);
     }
 
     @Override

@@ -9,7 +9,7 @@ public class Parrot extends Animal {
 
 
     public Parrot() {
-        super(25, Diet.OMNIVORE, "Medicinas", 6, Type.BIRD, Behavior.PREY, true, Habitat.TERRESTRIAL, true);
+        super("Loro",25, Diet.OMNIVORE, "Medicinas", 6, Type.BIRD, Behavior.PREY, true, Habitat.TERRESTRIAL, true);
     }
 
     @Override

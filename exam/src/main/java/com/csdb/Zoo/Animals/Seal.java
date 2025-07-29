@@ -9,7 +9,7 @@ public class Seal extends Animal {
 
 
     public Seal() {
-        super(25, Diet.CARNIVOROUS, "Medicinas", 6, Type.SEA, Behavior.PREY, true, Habitat.AQUATIC, true);
+        super("Foca",25, Diet.CARNIVOROUS, "Medicinas", 6, Type.SEA, Behavior.PREY, true, Habitat.AQUATIC, true);
     }
 
     @Override

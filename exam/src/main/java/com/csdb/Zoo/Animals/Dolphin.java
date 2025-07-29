@@ -9,7 +9,7 @@ public class Dolphin extends Animal {
 
 
     public Dolphin() {
-        super(25, Diet.CARNIVOROUS, "Medicinas", 6, Type.SEA, Behavior.PREDATOR, true, Habitat.AQUATIC, true);
+        super( "Delfin",25, Diet.CARNIVOROUS, "Medicinas", 6, Type.SEA, Behavior.PREDATOR, true, Habitat.AQUATIC, true);
     }
 
     @Override

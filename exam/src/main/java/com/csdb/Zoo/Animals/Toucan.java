@@ -9,7 +9,7 @@ public class Toucan extends Animal {
 
 
     public Toucan() {
-        super(25, Diet.HERBIVOROUS, "Medicinas", 6, Type.BIRD, Behavior.PREY, true, Habitat.TERRESTRIAL, true);
+        super("Tucan",25, Diet.HERBIVOROUS, "Medicinas", 6, Type.BIRD, Behavior.PREY, true, Habitat.TERRESTRIAL, true);
     }
 
     @Override

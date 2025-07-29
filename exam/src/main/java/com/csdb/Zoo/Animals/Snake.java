@@ -9,7 +9,7 @@ public class Snake extends Animal {
 
 
     public Snake() {
-        super(25, Diet.OMNIVORE, "Medicinas", 6, Type.REPTILE, Behavior.PREDATOR, true, Habitat.TERRARIUM, false);
+        super("Serpiente",25, Diet.OMNIVORE, "Medicinas", 6, Type.REPTILE, Behavior.PREDATOR, true, Habitat.TERRARIUM, false);
     }
 
     @Override
