@@ -1,4 +1,4 @@
-package com.csdb.Zoo;
+package com.csdb.Zoo.Enums;
 
 public enum Habitat {
     TERRESTRIAL("Terrestre", 4),

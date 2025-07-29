@@ -1,10 +1,15 @@
-package com.csdb.Zoo;
+package com.csdb.Zoo.Animals;
 
-public class Lion extends Animal {
+import com.csdb.Zoo.Enums.Behavior;
+import com.csdb.Zoo.Enums.Diet;
+import com.csdb.Zoo.Enums.Habitat;
+import com.csdb.Zoo.Enums.Type;
+
+public class Dolphin extends Animal {
 
 
-    public Lion() {
-        super(20, Diet.CARNIVOROUS, "Medicinas", 4, Type.MAMMAL, Behavior.PREDATOR, true, Habitat.TERRESTRIAL);
+    public Dolphin() {
+        super(25, Diet.CARNIVOROUS, "Medicinas", 6, Type.SEA, Behavior.PREDATOR, true, Habitat.AQUATIC);
     }
 
     @Override
@@ -23,7 +28,7 @@ public class Lion extends Animal {
 
     @Override
     public Habitat getHabitat() {
-        return Habitat.TERRESTRIAL;
+        return Habitat.AQUATIC;
     }
 
 }

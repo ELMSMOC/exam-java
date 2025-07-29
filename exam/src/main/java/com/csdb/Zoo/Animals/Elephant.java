@@ -1,10 +1,15 @@
-package com.csdb.Zoo;
+package com.csdb.Zoo.Animals;
+
+import com.csdb.Zoo.Enums.Behavior;
+import com.csdb.Zoo.Enums.Diet;
+import com.csdb.Zoo.Enums.Habitat;
+import com.csdb.Zoo.Enums.Type;
 
 public class Elephant extends Animal {
 
 
     public Elephant() {
-        super(25, Diet.HERBIVOROUS, "Medicinas", 6, Type.MAMMAL, Behavior.HUNT, true, Habitat.TERRESTRIAL);
+        super(25, Diet.HERBIVOROUS, "Medicinas", 6, Type.MAMMAL, Behavior.PREY, true, Habitat.TERRESTRIAL);
     }
 
     @Override
@@ -18,7 +23,7 @@ public class Elephant extends Animal {
 
     @Override
     public Behavior getBehavior() {
-        return Behavior.PREDATOR;
+        return Behavior.PREY;
     }
 
     @Override

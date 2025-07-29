@@ -1,8 +1,8 @@
-package com.csdb.Zoo;
+package com.csdb.Zoo.Enums;
 
 public enum Behavior {
     PREDATOR("Depredador"),
-    HUNT("Presa");
+    PREY("Presa");
 
     String trans;
 

@@ -1,4 +1,9 @@
-package com.csdb.Zoo;
+package com.csdb.Zoo.Animals;
+
+import com.csdb.Zoo.Enums.Behavior;
+import com.csdb.Zoo.Enums.Diet;
+import com.csdb.Zoo.Enums.Habitat;
+import com.csdb.Zoo.Enums.Type;
 
 public abstract class Animal implements IAnimal{
 
@@ -21,6 +26,12 @@ public abstract class Animal implements IAnimal{
         this.behavior = behavior;
         this.isCompatible = isCompatible;
         this.habitat = habitat;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal [space=" + space + ", diet=" + diet + ", cares=" + cares + ", frequency=" + frequency + ", type="
+                + type + ", behavior=" + behavior + ", isCompatible=" + isCompatible + ", habitat=" + habitat + "]";
     }
 
 

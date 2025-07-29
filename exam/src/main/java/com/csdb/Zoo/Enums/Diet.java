@@ -1,4 +1,4 @@
-package com.csdb.Zoo;
+package com.csdb.Zoo.Enums;
 
 public enum Diet {
     CARNIVOROUS("Carnivoro"),
