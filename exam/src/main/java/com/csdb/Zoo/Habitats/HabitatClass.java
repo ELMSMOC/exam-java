@@ -19,7 +19,7 @@ public abstract class HabitatClass {
 
     public boolean addAnimal(Animal a){
         for (Animal animal : animalsList) {
-            if (!animal.isCompatible(a)) {
+            if (!animal.isCompatible(a) && animalsList.size() < this.capacity) {
                 return false;
             }
         }
