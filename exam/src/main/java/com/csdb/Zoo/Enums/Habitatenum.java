@@ -1,6 +1,6 @@
 package com.csdb.Zoo.Enums;
 
-public enum Habitat {
+public enum Habitatenum {
     TERRESTRIAL("Terrestre"),
     AQUATIC("Acuatico"),
     TERRARIUM("Terrario");
@@ -8,7 +8,7 @@ public enum Habitat {
 
     String trans;
 
-    Habitat(String trans){
+    Habitatenum(String trans){
         this.trans = trans;
     }
 

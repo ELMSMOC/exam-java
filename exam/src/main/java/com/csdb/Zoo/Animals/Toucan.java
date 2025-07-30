@@ -2,14 +2,14 @@ package com.csdb.Zoo.Animals;
 
 import com.csdb.Zoo.Enums.Behavior;
 import com.csdb.Zoo.Enums.Diet;
-import com.csdb.Zoo.Enums.Habitat;
+import com.csdb.Zoo.Enums.Habitatenum;
 import com.csdb.Zoo.Enums.Type;
 
 public class Toucan extends Animal {
 
 
     public Toucan() {
-        super("Tucan",25, Diet.HERBIVOROUS, "Medicinas", 6, Type.BIRD, Behavior.PREY, true, Habitat.TERRESTRIAL, true);
+        super("Tucan",25, Diet.HERBIVOROUS, "Medicinas", 6, Type.BIRD, Behavior.PREY, true, Habitatenum.TERRESTRIAL, true);
     }
 
     @Override
@@ -18,8 +18,8 @@ public class Toucan extends Animal {
     }
 
     @Override
-    public Habitat getHabitat() {
-        return Habitat.TERRESTRIAL;
+    public Habitatenum getHabitat() {
+        return Habitatenum.TERRESTRIAL;
     }
 
 }

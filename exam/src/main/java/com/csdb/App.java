@@ -3,8 +3,9 @@ package com.csdb;
 import com.csdb.Zoo.Animals.Seal;
 import com.csdb.Zoo.Animals.Toucan;
 import com.csdb.Zoo.Animals.Zebra;
-import com.csdb.Zoo.Enums.Habitat;
-import com.csdb.Zoo.Habitats.HabitatClass;
+import com.csdb.Zoo.Enums.Habitatenum;
+import com.csdb.Zoo.Exceptions.ZooException;
+import com.csdb.Zoo.Habitats.Habitat;
 import com.csdb.Zoo.Habitats.Terrestrial;
 import com.csdb.Zoo.Animals.Dolphin;
 import com.csdb.Zoo.Animals.Elephant;
@@ -21,7 +22,7 @@ public final class App {
      * Says hello to the world.
      * @param args The arguments of the program.
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ZooException{
 
 
 

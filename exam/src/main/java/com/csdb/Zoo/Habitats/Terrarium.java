@@ -1,11 +1,11 @@
 package com.csdb.Zoo.Habitats;
 
-import com.csdb.Zoo.Enums.Habitat;
+import com.csdb.Zoo.Enums.Habitatenum;
 
-public class Terrarium extends HabitatClass{
+public class Terrarium extends Habitat{
 
     public Terrarium() {
-        super(10, Habitat.TERRARIUM);
+        super(10, Habitatenum.TERRARIUM);
     }
 
 }

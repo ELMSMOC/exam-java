@@ -1,11 +1,11 @@
 package com.csdb.Zoo.Animals;
 
 import com.csdb.Zoo.Enums.Behavior;
-import com.csdb.Zoo.Enums.Habitat;
+import com.csdb.Zoo.Enums.Habitatenum;
 
 public interface IAnimal {
     Behavior getBehavior();
-    Habitat getHabitat();
+    Habitatenum getHabitat();
     boolean getIsSociable();
     boolean isCompatible(Animal a);
 

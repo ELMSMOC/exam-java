@@ -2,7 +2,7 @@ package com.csdb.Zoo.Animals;
 
 import com.csdb.Zoo.Enums.Behavior;
 import com.csdb.Zoo.Enums.Diet;
-import com.csdb.Zoo.Enums.Habitat;
+import com.csdb.Zoo.Enums.Habitatenum;
 import com.csdb.Zoo.Enums.Type;
 
 public abstract class Animal implements IAnimal{
@@ -16,9 +16,9 @@ public abstract class Animal implements IAnimal{
     private Behavior behavior;
     private boolean isCompatible;
     private boolean isSociable;
-    private Habitat habitat;
+    private Habitatenum habitat;
 
-    public Animal(String specie, int space, Diet diet, String cares, int frequency, Type type, Behavior behavior, boolean isCompatible, Habitat habitat, boolean isSociable) {
+    public Animal(String specie, int space, Diet diet, String cares, int frequency, Type type, Behavior behavior, boolean isCompatible, Habitatenum habitat, boolean isSociable) {
         this.specie = specie;
         this.space = space;
         this.diet = diet;
@@ -33,7 +33,7 @@ public abstract class Animal implements IAnimal{
 
     @Override
     public boolean isCompatible(Animal a) {
-        if (a.getBehavior() == this.getBehavior() && a.getHabitat() == this.getHabitat() && a.getIsSociable() == true && this.getIsSociable() == true){
+        if (a.getBehavior() == this.getBehavior() && a.getHabitat() == this.getHabitat() && a.getIsSociable() && this.getIsSociable()){
             return true;
         } else {
             return false;
